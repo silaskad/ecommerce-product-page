@@ -1,0 +1,205 @@
+@media only screen and (min-width: 0rem) {
+    .lightbox {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 48rem) {
+    .lightbox {
+        display: block;
+        position: fixed;
+        z-index: 1111111;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    .section_container {
+        width: 100%;
+        height: 100%;
+        max-width: 32rem;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .close_button_container {
+        width: 100%;
+        display: inherit;
+        justify-content: flex-end;
+        align-items: center;
+        margin-bottom: 1.5rem;
+    }
+
+    .close_button {
+        display: inherit;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        background: none;
+        width: 24px;
+    }
+
+    .close_button:hover {
+        cursor: pointer;
+    }
+
+    .close_button img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+        filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(1%) hue-rotate(224deg) brightness(105%) contrast(101%);
+    }
+
+    .close_button img:hover {
+        filter: none;
+    }
+
+    .section_images {
+        display: inherit;
+        flex-direction: column;
+        align-items: center;
+        align-items: center;
+        width: 100%;
+        gap: 2rem;
+    }
+
+    .product_image_main_container {
+        display: inherit;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .product_image_main_container img {
+        object-fit: cover;
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: 1.125rem;
+        overflow: hidden;
+    }
+
+    .button_nav_group {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: auto;
+    }
+
+    .nav_button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 48px;
+        height: 48px;
+        padding: 1rem;
+        border-radius: 50%;
+        border: none;
+        background: var(--clr-white);
+    }
+
+    .nav_button:hover {
+        cursor: pointer;
+    }
+
+    .nav_button img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .previous_button {
+        margin-right: auto;
+        margin-left: -1.5rem;
+    }
+
+    .next_button {
+        margin-right: -1.5rem;
+    }
+
+    .content_thumbnails {
+        display: flex;
+    }
+
+    .thumbnails_container {
+        display: inherit;
+        list-style: none;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .thumbnail_list_element {
+        width: 6.25rem;
+        height: 6.25rem;
+        display: block;
+        border-radius: 1.125rem;
+        overflow: hidden;
+    }
+
+    .thumbnail_button {
+        border: none;
+        background: none;
+    }
+
+    .thumbnail_button:hover {
+        cursor: pointer;
+    }
+
+    .thumbnail_button img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transform: scale(1);
+        transition: 
+            transform .15s ease-in-out;
+    }
+
+    .thumbnail_button img:hover {
+        transform: scale(1.125);
+    }
+
+    .thumbnail_list_element.active {
+        border: 3px solid var(--clr-primary-orange);
+        position: relative;
+    }
+
+    .thumbnail_list_element.active:hover {
+        pointer-events: none;
+    }
+
+    .thumbnail_list_element.active::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: var(--clr-neutral-blue300);
+        opacity: .75;
+    }
+
+    .thumbnail_list_element.active img {
+        transform: scale(1);
+        transition: 
+            transform .15s ease-in-out;
+    }
+
+    .thumbnail_list_element.active:hover img {
+        transform: scale(1.125);
+    }
+}

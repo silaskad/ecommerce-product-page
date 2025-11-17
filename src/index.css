@@ -1,0 +1,78 @@
+:root {
+    --clr-primary-orange: hsl(26, 100%, 55%);
+    --clr-primary-paleOrange: hsl(25, 100%, 94%);
+
+    --clr-neutral-blue900: hsl(220, 13%, 13%);
+    --clr-neutral-blue700: hsl(219, 9%, 45%);
+    --clr-neutral-blue500: hsl(220, 14%, 75%);
+    --clr-neutral-blue300: hsl(223, 64%, 98%);
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-black: hsl(0, 0%, 0%);
+
+    --clr-bg-lightbox: hsla(0, 0%, 0%, 0.75);
+
+    --ff: "Kumbh Sans", sans-serif;
+
+    --padding-section: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
+}
+
+/* resets */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+/* General styles */
+body {
+    line-height: 1.5;
+    font-family: var(--ff);
+    font-weight: 400;
+    font-size: 1rem;
+    background: var(--clr-white);
+    color: var(--clr-neutral-blue700);
+}
+
+h1,h2,h3,h4,h5,h6 {
+    color: var(--clr-neutral-blue900);
+    font-size: 2.5rem;
+}
+
+body.scroll_lock {
+    overflow: hidden;
+}
+
+.backdrop {
+    background: var(--clr-bg-lightbox);
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+}
