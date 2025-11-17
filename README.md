@@ -36,8 +36,6 @@ Users can:
 ---
 
 ### Screenshots
-
-*(Add your screenshot here once ready)*
 ![Preview](./public/assets/Screenshot%20-mobile.png)
 ![Preview](./public/assets/Screenshot%20-desktop-lightbox.png)
 ![Preview](./public/assets/Screenshot%20-mobile-menu.png)
